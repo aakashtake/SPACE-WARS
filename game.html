@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SPACE WAR
+        </title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            body{
+                margin: 0px;
+                background: black;
+            }
+            #spaceship{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="fixed text-white text-sm ml-2 mt-1 select-none" id="scoreboard"><span>SCORE: </span><span id="scoreEl">0</span></div>
+        <div class="fixed inset-0 flex items-center justify-center" id="module">
+            <div class="bg-white max-w-md w-full p-6 text-center">
+                <p class="text-sm text-gray-800 mb-4"> <h1 class="text-4xl font-bold leading-none" id="bigScore">0</h1>is your current score.</p>
+                <p class="text-sm text-gray-800 mb-4"> <h1 class="text-4xl font-bold leading-none" id="highScore">0</h1> is your highest score.</p>
+                <div><button class="bg-blue-500 text-white w-full py-3 rounded-full" id="start">Start Game</button></div>
+            </div>
+        </div>
+        <img class="fixed"  id ="spaceship" src="https://img-premium.flaticon.com/png/128/560/premium/560919.png?token=exp=1627412385~hmac=61b6ec338d6fd99e0cf05f2dc142bf6c"></img>
+        <canvas></canvas>
+        <script src="testindex.js"></script>    
+    </body>
+</html>
